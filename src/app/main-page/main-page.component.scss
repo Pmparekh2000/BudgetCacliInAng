@@ -18,4 +18,44 @@
         text-transform: uppercase;
         color: $dark;
     }
+
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 58px;
+        color: white;
+
+        // &.green{
+        //     color:;
+        // }
+    }
+}
+
+.total-budget-section{
+    
+    display: flex;
+    height: 150px;
+    background: $dark;
+
+    //Horizontally and vertically center the text
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 58px;
+        color: white;
+
+        &.green{
+            color: lighten($green, $amount: 12%);
+        }
+
+        &.red{
+            color: lighten($red, $amount: 12%)
+        }
+    }
 }
